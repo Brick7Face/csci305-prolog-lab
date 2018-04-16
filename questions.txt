@@ -1,0 +1,57 @@
+1) X = 'King George VI' .
+
+2) X = 'Queen Mary' .
+
+3) X = 'King George V' . 
+
+4) X = 'King George V' ;
+   X = 'Queen Mary' .
+   
+5) X = 'Prince William' ;
+   X = 'Prince Henry' .
+   
+6) X = 'Princess Margaret' .
+
+7) X = 'Prince Charles' ;
+   X = 'Prince Andrew' ;
+   X = 'Prince Edward'.
+
+8) X = 'Princess Anne' .
+
+9) 
+
+10) X = 'Catherine Middleton' .
+
+11) 
+
+12)
+
+13)
+
+14)
+
+15)
+
+16) I like the logical statement format. For some reason, it's really fun to define rules, read in a
+"dictionary" of sorts, and then find results based on your searches. It seems like a really useful 
+way to maintain a database and relations of objects in the database. Put more simply, I like Prolog's
+ability to solve problems simply. It feels like I have needed this ability my whole life.
+
+17) I don't really like how the language feels like it lacks functionality sometimes. For example, the
+things it can do are fairly simple overall, at least as far as I know about it. You probably would have
+a difficult time creating a GUI with Prolog, for example. However, I don't think that every language
+should have similar functionality, otherwise there would not be a need for more than one perfect language
+that does everything. Prology is different, and though it is frustrating at times, I can deal with it.
+
+18) I did enjoy the lab - it was simpler than I thought it would be initially, and it was fun to define
+relationships and think about what went into getting things to work. It felt natural, even though the syntax
+and general language is foreign compared to familiar languages like Java and Python.
+
+19) Probably around 10 or less; I probably could have shaved that down, but as with previous labs, I like to
+experiment and know what is happening, that I have the right answer, etc.
+
+20) I actually might, particularly for projects where it is necessary to solve problems in relationship to one
+another. I mentioned database querying above, and that seems like a useful function for this. I also have always
+felt like there should be an easy way to solve riddles like the one presented in the first lecture video series,
+and Prolog has finally filled that hole in my life. I will most definitely use it at least to solve those kinds
+of riddles.
