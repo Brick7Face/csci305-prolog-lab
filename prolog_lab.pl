@@ -88,8 +88,18 @@ grandmother(Grandmother,Child) :-
 grandchild(Grandchild,Grandparent) :-
   grandparent(Grandparent,Grandchild).
 
-% ancestor/2 (ancestor(X, Y) means X is the ancestor of Y)
-% descendant/2 (descendant(X, Y) means X is the descendant of Y)
+% rule to ask if Ancestor is an ancestor of Descendant, defined recursively
+ancestor(Ancestor,Descendant) :-
+  parent(Ancestor,Descendant).
+% recursive definition of ancestor - ask if Parent is the parent of Descendant
+% and Ancestor is the ancestor of that Parent
+ancestor(Ancestor,Descendant) :-
+  parent(Parent,Descendant),
+  ancestor(Ancestor,Parent).
+
+% rule to ask if Descendant is a descendant of Ancestor
+descendant(Descendant,Ancestor) :-
+  ancestor(Ancestor,Descendant).
 
 % rule to ask if Older is in fact older than Younger
 older(Older,Younger) :-
