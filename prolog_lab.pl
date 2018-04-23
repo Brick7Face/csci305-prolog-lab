@@ -11,9 +11,10 @@ father(Father,Child) :-
   parent(Father,Child),
   male(Father).
 
-% rule to ask if Male is married to Female
-spouse(Male,Female) :-
-  married(Male,Female).
+% rule to ask if Spouse1 is married to Spouse2
+spouse(Spouse1,Spouse2) :-
+  married(Spouse1,Spouse2);
+  married(Spouse2,Spouse1).
 
 % rule to ask if Child is the child of Parent
 child(Child,Parent) :-
@@ -54,20 +55,20 @@ uncle(Uncle,Child) :-
   male(Uncle).
 
 % rule to ask if Uncle is an uncle-by-marriage of Child
-uncle(Uncle,Child) :-
-  aunt(Aunt,Child),
-  spouse(Uncle,Aunt).
+%uncle(Uncle,Child) :-
+ % aunt(Aunt,Child),
+  %spouse(Uncle,Aunt).
 
 % rule to ask if Aunt is a blood aunt of Child
 aunt(Aunt,Child) :-
   sibling(Aunt,Parent),
   parent(Parent,Child),
   female(Aunt).
-
+  
 % rule to ask if Aunt is an aunt-by-marriage of Child
-aunt(Aunt,Child) :-
-  uncle(Uncle,Child),
-  spouse(Aunt,Uncle).
+%aunt(Aunt,Child) :-
+ % uncle(Uncle,Child),
+  %spouse(Aunt,Uncle).
 
 % rule to ask if Grandparent is a grandparent of Child
 grandparent(Grandparent,Child) :-
