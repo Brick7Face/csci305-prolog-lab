@@ -113,17 +113,25 @@ descendant(Descendant,Ancestor) :-
   child(Child,Ancestor),
   descendant(Descendant,Child).
 
-% rule to ask if Older is in fact older than Younger
+% rule to ask if Older is in fact older than Younger based on birth and death
 older(Older,Younger) :-
-  born(Older,YearO),
-  born(Younger,YearY),
-  YearO < YearY.
+  born(Older,BornO),
+  died(Older,DiedO),
+  born(Younger,BornY),
+  died(Younger,DiedY),
+  AgeO is DiedO-BornO,
+  AgeY is DiedY-BornY,
+  AgeO > AgeY.
 
-% rule to ask if Younger is younger than Older
+% rule to ask if Younger is younger than Older based on birth and death
 younger(Younger,Older) :-
-  born(Older,YearO),
-  born(Younger,YearY),
-  YearO > YearY.
+  born(Younger,BornY),
+  died(Younger,DiedY),
+  born(Older,BornO),
+  died(Older,DiedO),
+  AgeY is DiedY-BornY,
+  AgeO is DiedO-BornO,
+  AgeY < AgeO.
 
 % rule to ask who was King or Queen (Regent) when Person was born
 regentWhenBorn(Regent,Person) :-

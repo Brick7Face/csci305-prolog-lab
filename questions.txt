@@ -45,17 +45,7 @@ EC2) X = 'Viscount Linley' ;
 
 13) false.
 
-14) X = 'Queen Victoria' ;
-	X = 'Princess Alexandra of Denmark' ;
-	X = 'Queen Mary' ;
-	X = 'Mrs Simpson' ;
-	X = 'Lady Elizabeth Bowes-Lyon' ;
-	X = 'Prince Albert' ;
-	X = 'King Edward VII' ;
-	X = 'King George V' ;
-	X = 'King Edward VIII' ;
-	X = 'King George VI' ;
-	X = 'Prince Philip' .
+14) false.
 
 15) X = 'King George V' .
 
